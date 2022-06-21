@@ -5,8 +5,8 @@
   "main": "server/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server/index.js",
-    "local": "./node_modules/.bin/nodemon --watch server -e js server/index.js"
+    "start": "node server/index1.js",
+    "local": "./node_modules/.bin/nodemon --watch server -e js server/index1.js"
   },
   "author": "Lighthouse Labs",
   "license": "ISC",
