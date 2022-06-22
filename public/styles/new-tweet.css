@@ -14,6 +14,12 @@
    font-family: 'Source Sans Pro', sans-serif;
    /* position:relative */
 }
+#tweetlist{
+
+  display: flex;
+  flex-flow: column;
+  gap: 10px 20px;
+}
 
 .tweetbox{
 
@@ -94,10 +100,10 @@
    width:95%;
    /* position: relative; */
 }
-.avatar{
-  width: 100px;
-  height: 100px;
-}
+/* .avatar{
+  width: 20px;
+  height: 20px;
+} */
 .social:hover{
   color: #BADA55
 }

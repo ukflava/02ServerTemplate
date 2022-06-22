@@ -36,6 +36,7 @@ height: auto;
 position: relative; 
 background-color: #f4f1ec;
 text-align: center;
+gap: 10px 20px;
 }
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
