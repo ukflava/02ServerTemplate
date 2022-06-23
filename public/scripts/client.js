@@ -1,29 +1,29 @@
 $(document).ready(function() {
-  const data = [
-    {
-      "user": {
-        "name": "Newton",
-        "avatars": "https://i.imgur.com/73hZDYK.png"
-        ,
-        "handle": "@SirIsaac"
-      },
-      "content": {
-        "text": "If I have seen further it is by standing on the shoulders of giants"
-      },
-      "created_at": 1461116232227
-    },
+  // const data = [
+  //   {
+  //     "user": {
+  //       "name": "Newton",
+  //       "avatars": "https://i.imgur.com/73hZDYK.png"
+  //       ,
+  //       "handle": "@SirIsaac"
+  //     },
+  //     "content": {
+  //       "text": "If I have seen further it is by standing on the shoulders of giants"
+  //     },
+  //     "created_at": 1461116232227
+  //   },
 
-    {
-      "user": {
-        "name": "Descartes",
-        "avatars": "https://i.imgur.com/nlhLi3I.png",
-        "handle": "@rd" },
-      "content": {
-        "text": "Je pense , donc je suis"
-      },
-      "created_at": 1461113959088
-    }
-  ];
+  //   {
+  //     "user": {
+  //       "name": "Descartes",
+  //       "avatars": "https://i.imgur.com/nlhLi3I.png",
+  //       "handle": "@rd" },
+  //     "content": {
+  //       "text": "Je pense , donc je suis"
+  //     },
+  //     "created_at": 1461113959088
+  //   }
+  // ];
 
   const escape = function (str) {
     let div = document.createElement("div");
@@ -47,11 +47,13 @@ loadTweets()
     $('#errorLong').hide()
     event.preventDefault();
     const $input = $('#tweet-text').val().length
+    $('#tweet-text').text('#tweet-text')
+    // let XSSsafetext = $("#targettweet").val()
     let postdata = $("#targettweet").serialize();
+    console.log($('#tweet-text'))
     if ($input < 1){ $('#errorShort').slideDown()}
     if ($input > 140){ $('#errorLong').slideDown()}
-    // alert( "Handler for .submit() called." );
-    
+        
     else{ 
     $.post( "/tweets", postdata)
     .done(() => {
@@ -66,6 +68,40 @@ loadTweets()
   // console.log("postdata", postdata)
   
   });
+  // loadTweets()
+
+  // $("#targettweet").submit(function(event) {
+  //   $('#errorShort').hide()
+  //   $('#errorLong').hide()
+  //   event.preventDefault();
+  //   const $input = $('#tweet-text').val().length
+  //   let XSSsafetext = $("#targettweet").text
+  //   let postdata = $("#targettweet").serialize();
+  //   console.log(postdata)
+  //   if ($input < 1){ $('#errorShort').slideDown()}
+  //   if ($input > 140){ $('#errorLong').slideDown()}
+  //   // alert( "Handler for .submit() called." );
+    
+  //   else{ 
+  //   $.post( "/tweets", postdata)
+  //   .done(() => {
+
+  //     $("#remaining").html(remaining);
+  //     $('#tweet-text').val('').focus();
+  //     $('#tweetlist').empty();
+  //     loadTweets()
+  //   } )
+    
+  // }
+
+
+
+
+
+
+
+// *********
+
 
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {

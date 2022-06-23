@@ -35,6 +35,9 @@
   
 }
 #rightbar{
+  color: #FFFFFF;
+  background-color: #4056A1;
+  font-size: 24px;
   padding-right: 1.5em;
 }
 
@@ -42,4 +45,19 @@
     font: var(--fa-font-solid);
     
   content: "\f103"
+}
+.scrollToTop{
+  text-align:center; 
+  background-color: white;
+  border-radius: 50%;
+  position:fixed;
+  bottom:75px;
+  right:40px;
+  display:none;
+  border: none;
+  font-size: 30px;
+}
+.scrollToTop:hover{
+  text-decoration:none;
+  color: #ff0000;
 }

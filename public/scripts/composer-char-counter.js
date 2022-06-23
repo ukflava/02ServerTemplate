@@ -10,16 +10,29 @@ $(document).ready(function() {
     $("#remaining").css({
       'color': color
     });
-    // const usertweet = $input.val()
-    // const $buffertweet = $('<li>').text(usertweet).prependTo($tweetlist)
-    // const$('tweetlength').prepend(usertweet)
-    // console.log(remaining);
-    // $input.val('').focus()
-  });
-  // $(".new-tweet").on('keypress',()=>{
-  //   console.log("banana")
-  // })
-  
+   });
+
+  $("#showButton").on('click',()=>{
+    $("#targettweet").slideToggle();
+    $("#showButton").toggleClass('rotate')
+    console.log("banana")
+  })
+
+  $(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('.scrollToTop').fadeIn();
+    } else {
+        $('.scrollToTop').fadeOut();
+    }
+});
+
+//Click event to scroll to top
+$('.scrollToTop').click(function(){
+  $("#targettweet").slideDown()
+    $('html, body').animate({scrollTop : 0},800);
+    return false;
+});
+
 });
 
 // $(() => {
@@ -33,3 +46,4 @@ $(document).ready(function() {
 // $input.val('').focus()
 //   })
 // });
+
