@@ -1,24 +1,21 @@
-/* .nav{
-  display: flex;
-  flex-direction: row;
-} */
+@media only screen and (max-width: 1024px) {
+  
 .topnav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
-  height: 120px;
-  align-content: flex-end;
+  align-items: flex-start;
+  align-content: flex-start;
   
   width: 100vw;
   color: #FFFFFF;
-  background-color: #4056A1;
+  background: transparent;
   font-size: 24px;
   font-family: 'Bungee', cursive;
   padding-inline: 1.5em;  /* padding for top nav*/
    position: fixed;
    top: 0;
-   z-index: 100;
+  
 }
 .rightbar {
   display: flex;
@@ -34,15 +31,131 @@
 }
 #rightbar{
   color: #FFFFFF;
-  background-color: #4056A1;
+  background: transparent;
   font-size: 24px;
   /* padding-right: 1.5em; */
 }
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+     font-size: 24px;
+     height: auto;
+    /* font-family: Helvetica, arial , sans-serif; */
+     font-family: 'Source Sans Pro', sans-serif;
+ }
+ main{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  left:5%;
+  right: 5%;
+  max-width: 90%; 
+height: auto; 
+position: relative; 
+background-color: #f4f1ec;
+text-align: center;
+gap: 10px 20px;
+}
+header{
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #a57649;
+}
+#profilePicture{
+  width: 100px;
+  height:100px;
+}
 
-.fa-angles-down{
-    font: var(--fa-font-solid);
+}
+@media only screen and (min-width: 1024px) {
+  body {
     
-  content: "\f103"
+    color: #545149;
+    background-color: #f4f1ec;
+     font-size: 24px;
+     height: auto;
+    /* font-family: Helvetica, arial , sans-serif; */
+     font-family: 'Source Sans Pro', sans-serif;
+     padding-top: 120px;
+  }
+  main{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    left:5%;
+    right: 5%;
+    max-width: 90%; 
+  height: auto; 
+  position: relative; 
+  background-color: #f4f1ec;
+  text-align: center;
+  gap: 10px 20px;
+  }
+  header{
+    height: 400px;
+    width: 30vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background-color: #a57649;
+  }
+  /* .container{
+width: 20vw;
+  }
+   */
+
+  .topnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 120px;
+    align-content: flex-end;
+    
+    width: 100vw;
+    color: #FFFFFF;
+    background-color: #4056A1;
+    font-size: 24px;
+    font-family: 'Bungee', cursive;
+    padding-inline: 1.5em;  /* padding for top nav*/
+     position: fixed;
+     top: 0;
+     z-index: 100;
+  }
+  .rightbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+    /* margin: 1.5em; */
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #FFFFFF;
+    
+  }
+  #rightbar{
+    color: #FFFFFF;
+    background-color: #4056A1;
+    font-size: 24px;
+    /* padding-right: 1.5em; */
+  }
+
+  /* Write CSS rules that target Tablets screen sizes upwards - including desktops */
+}
+.fa-angles-down{
+  font: var(--fa-font-solid);
+  
+content: "\f103"
 }
 .scrollToTop{
   text-align:center; 
