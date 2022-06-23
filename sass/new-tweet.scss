@@ -1,114 +1,120 @@
+@import "./_variables";
+
+// *********************************Style for Tweets and Buttons
+
 .errorMessage {
   display: flex;
   align-items: center;
-  width: 90%;
-  font-family: "Bungee", cursive;
+   width: 90%;
+  font-family: 'Bungee', cursive;
   color: #ff0000;
-  background: #ffffff;
-  text-align: center;
-  border: 2px dotted #ff0000;
-  display: none;
+  background : #ffffff;
+  text-align : center;
+   border     : 2px dotted #ff0000;
+  display    : none;
 }
 
-.new-tweet {
-  background-color: transparent;
-  border: none;
-  font-size: 14px;
-  height: auto;
-  width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
-}
 
-#tweetlist {
+
+
+  .new-tweet {
+    background-color: transparent;
+     border: none;
+    font-size: 14px;
+    height: auto;
+    width:100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    }
+
+#tweetlist{
   display: flex;
   flex-flow: column;
   justify-content: space-between;
   align-items: center;
   gap: 10px 20px;
   width: 100%;
+  
 }
-
-#targettweet {
+#targettweet{
   width: 100%;
+  
 }
 
-.tweetbox {
+.tweetbox{
+
   display: flex;
   flex-flow: column wrap;
   justify-content: space-between;
-  left: 5%;
+  left:5%;
   right: 5%;
   width: 90%;
   font-size: 24px;
-  color: #000;
+    color: #000;
   background: transparent;
   border: 3px solid #000;
   outline: none;
+   
 }
-
 .tweetbox:hover {
-  box-shadow: 5px 10px #888888;
+  box-shadow: 5px 10px #888888
 }
 
-.tweetcounter {
+.tweetcounter{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 95%;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   color: #000000;
 }
 
-.tweetbutton {
-  font-family: "Bungee", cursive;
+// button for new tweets
+.tweetbutton{
+  font-family: 'Bungee', cursive;
   font-size: 14px;
   height: auto;
   color: #FFFFFF;
   background-color: #4056A1;
 }
-
-#addTweet {
-  margin-left: 5%;
+#addTweet{
+  margin-left: 5%
+}
+#addTweet:hover{
+  color: #FF0000
 }
 
-#addTweet:hover {
-  color: #FF0000;
-}
 
-#tweet-text {
-  margin-top: 50px;
+#tweet-text{
+margin-top: 50px;
   width: 90%;
   font-size: 24px;
-  color: #000;
+    color: #000;
   background: transparent;
   border: none;
   border-bottom: 3px solid #000;
   outline: none;
 }
-
-.tweetfooter {
+.tweetfooter{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: baseline;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #000000;
   font-size: 14px;
   padding-inline: 1.5em;
 }
-
-.tweethead {
+.tweethead{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   color: #000000;
   font-size: 14px;
   padding-inline: 1.5em;
 }
-
 .tweetbody {
   display: flex;
   align-self: center;
@@ -119,10 +125,10 @@
   border-bottom: 3px solid #000;
   outline: none;
   padding-inline: 1.5em;
-  width: 95%;
-  /* position: relative; */
+   width:95%;
+   /* position: relative; */
 }
 
-.social:hover {
-  color: #BADA55;
+.social:hover{
+  color: #BADA55
 }

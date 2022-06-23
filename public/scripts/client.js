@@ -42,40 +42,6 @@ loadTweets()
   }
   
   });
-  // loadTweets()
-
-  // $("#targettweet").submit(function(event) {
-  //   $('#errorShort').hide()
-  //   $('#errorLong').hide()
-  //   event.preventDefault();
-  //   const $input = $('#tweet-text').val().length
-  //   let XSSsafetext = $("#targettweet").text
-  //   let postdata = $("#targettweet").serialize();
-  //   console.log(postdata)
-  //   if ($input < 1){ $('#errorShort').slideDown()}
-  //   if ($input > 140){ $('#errorLong').slideDown()}
-  //   // alert( "Handler for .submit() called." );
-    
-  //   else{ 
-  //   $.post( "/tweets", postdata)
-  //   .done(() => {
-
-  //     $("#remaining").html(remaining);
-  //     $('#tweet-text').val('').focus();
-  //     $('#tweetlist').empty();
-  //     loadTweets()
-  //   } )
-    
-  // }
-
-
-
-
-
-
-
-// *********
-
 
   const renderTweets = function(tweets) {
     for (let tweet of tweets) {
@@ -83,14 +49,6 @@ loadTweets()
       $('<article class="tweetbox">').html(buffer).prependTo('#tweetlist');
     }
 
-     // $("#addTweet").on('click',()=>{
-    //   const $input = $("#targettweet")
-      //  const usertweet = $input.val()
-      //  const $buffertweet = $('<article>').text(usertweet).prependTo(data)
-      // $tweetlist.prepend($buffertweet)
-      // console.log($input);
-      //  $input.val('').focus()
-    // });
   };
 
   const createTweetElement = function(tweet) {

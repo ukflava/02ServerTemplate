@@ -26,7 +26,7 @@ $(document).ready(function() {
     }
 });
 
-//Click event to scroll to top
+
 $('.scrollToTop').click(function(){
   $("#targettweet").slideDown()
     $('html, body').animate({scrollTop : 0},800);
@@ -34,16 +34,3 @@ $('.scrollToTop').click(function(){
 });
 
 });
-
-// $(() => {
-
-//   $("#addTweet").on('click',()=>{
-//  const $input = $("#tweet-text");
-// const usertweet = $input.val()
-// const $buffertweet = $('<li>').text(usertweet).prependTo($tweetlist)
-// // $tweetlist.prepend($buffertweet)
-// console.log(usertweet)
-// $input.val('').focus()
-//   })
-// });
-

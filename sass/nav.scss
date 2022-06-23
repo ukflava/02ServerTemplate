@@ -1,0 +1,155 @@
+@import "./_variables";
+
+//***********************************GLOBAL*********************************
+
+.fa-angles-down{
+  font: var(--fa-font-solid);
+  
+content: "\f103"
+}
+
+.rightbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #FFFFFF;
+  
+}
+#rightbar{
+  color: #FFFFFF;
+  background: transparent;
+  font-size: 24px;
+ }
+
+
+//*******************************Buttons**************************
+#showButton {
+  color: #FFFFFF;
+    background-color: transparent;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    animation: next 1.2s infinite normal ease-out;
+  }
+  #showButton:hover {
+    color: #FF0000;
+   }
+  .rotate {
+    transform: rotate(180deg);
+  }
+  .scrollToTop{
+    text-align:center; 
+    background-color: white;
+    border-radius: 50%;
+    position:fixed;
+    bottom:75px;
+    right:40px;
+    display:none;
+    border: none;
+    font-size: 30px;
+  }
+  .scrollToTop:hover{
+    text-decoration:none;
+    color: #ff0000;
+  }
+
+//***********************************TOP*********************************
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  
+  width: 100vw;
+  color: #FFFFFF;
+  background: transparent;
+  font-size: 24px;
+  font-family: $font-family-nav;
+  padding-inline: 1.5em;
+   position: fixed;
+   top: 0;
+   z-index: 100;
+}
+
+
+header{
+  height: auto;
+  width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: #a57649;
+}
+//***********************************BODY*********************************
+main{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%; 
+height: auto; 
+background-color: #f4f1ec;
+text-align: center;
+gap: 10px 20px;
+}
+
+
+
+
+body {
+  color: #545149;
+  background-color: #f4f1ec;
+   font-size: 24px;
+   height: auto;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+
+//***********************************RESPONSIVE*********************************
+
+// in mobile version topnav do not stay when scrolling
+@media only screen and (max-width: 1024px) {
+  main{
+       left:5%;
+    right: 5%;
+    max-width: 90%; 
+   position: relative; 
+
+  }
+
+  #profilePicture{
+    width: 100px;
+    height:100px;
+  }
+}
+  // desktop version topnav stay on top
+@media only screen and (min-width: 1024px) {
+  .topnav {
+    align-items: flex-end;
+    height: 120px;
+    align-content: flex-end;
+    background-color: $background-color-main;
+    z-index: 100;
+  }
+  body {
+    display: flex;
+  flex-flow: column;
+  padding-top: 120px;
+}
+
+header{
+  height: 400px;
+  width: 30%;
+  float: left;
+  margin-top: 250px;
+  margin-left: 50px;
+  border-radius: 10%;
+}
+
+}
+
