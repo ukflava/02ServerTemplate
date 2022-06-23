@@ -14,6 +14,20 @@
    font-family: 'Source Sans Pro', sans-serif;
    /* position:relative */
 }
+.errorMessage {
+  display: flex;
+  align-items: center;
+  /* height: 40px; */
+  width: 90vw;
+  font-family: 'Bungee', cursive;
+  color: #ff0000;
+  background : #ffffff;
+  text-align : center;
+  /* position   : relative; */
+  border     : 2px dotted #ff0000;
+  display    : none;
+}
+
 #tweetlist{
 
   display: flex;
@@ -58,7 +72,7 @@
   background-color: #4056A1;
 }
 #tweet-text{
-
+margin-top: 50px;
   width: 90vw;
   font-size: 24px;
     color: #000;

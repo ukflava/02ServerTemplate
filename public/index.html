@@ -51,7 +51,8 @@
     <!-- Page-specific (main) content here -->
     <main class="container" >
       
-       
+      <p class="errorMessage" id="errorShort">Your message is empty. Please fill the form </p>
+      <p class="errorMessage" id="errorLong">Your message is too long. Tweet should be 140 characters or less</p>
       <section class="new-tweet">
         <!-- <h2>Compose Tweet</h2> -->
         <form  id="targettweet" method="POST"action="/tweets">
@@ -74,8 +75,6 @@
           <div class="tweetfooter">10 days ago<div><i class="social fa-solid fa-flag"></i><i class="social fa-solid fa-retweet"></i><i class="social fa-solid fa-heart"></i> </div> </div>
           </article>
       
-          
-
       </div>
     </main>
   </body>

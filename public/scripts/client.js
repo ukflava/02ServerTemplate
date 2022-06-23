@@ -24,6 +24,13 @@ $(document).ready(function() {
       "created_at": 1461113959088
     }
   ];
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   const loadTweets = () => {
    
     $.get(`/tweets`).then(data => {
@@ -36,11 +43,13 @@ $(document).ready(function() {
 loadTweets()
 
   $("#targettweet").submit(function(event) {
+    $('#errorShort').hide()
+    $('#errorLong').hide()
     event.preventDefault();
     const $input = $('#tweet-text').val().length
-    let postdata = $.text("#targettweet").serialize();
-    if ($input < 1){ alert("too short")}
-    if ($input > 140){ alert("too long")}
+    let postdata = $("#targettweet").serialize();
+    if ($input < 1){ $('#errorShort').slideDown()}
+    if ($input > 140){ $('#errorLong').slideDown()}
     // alert( "Handler for .submit() called." );
     
     else{ 
