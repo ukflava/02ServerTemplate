@@ -14,10 +14,8 @@
   color: #FFFFFF;
   background-color: #4056A1;
   font-size: 24px;
-   /* font-family: Helvetica, arial , sans-serif; */
-   /* font-family: 'Source Sans Pro', sans-serif; */
-   font-family: 'Bungee', cursive;
-   left: 1.5em + safe;
+  font-family: 'Bungee', cursive;
+  padding-inline: 1.5em;  /* padding for top nav*/
    position: fixed;
    top: 0;
    z-index: 100;
@@ -38,7 +36,7 @@
   color: #FFFFFF;
   background-color: #4056A1;
   font-size: 24px;
-  padding-right: 1.5em;
+  /* padding-right: 1.5em; */
 }
 
 .fa-angles-down{

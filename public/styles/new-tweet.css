@@ -44,8 +44,8 @@ color: #FFFFFF;
 }
 #showButton:hover {
   color: #FF0000;
-  background-color: white;
-  border-radius: 50%; 
+  /* background-color: white;
+  border-radius: 50%;  */  
 }
 /* #showButton:active {
   color: #FF0000;
