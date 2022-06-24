@@ -10,22 +10,33 @@
   display: none;
 }
 
-.new-tweet {
-  background-color: transparent;
+#tweet-text {
+  margin-top: 50px;
+  width: 90%;
+  font-size: 24px;
+  color: #354259;
+  background: transparent;
   border: none;
-  font-size: 14px;
-  height: auto;
-  width: 100%;
-  font-family: "Source Sans Pro", sans-serif;
+  border-bottom: 3px solid #354259;
+  outline: none;
 }
 
-#tweetlist {
+.tweetcounter {
   display: flex;
-  flex-flow: column;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  gap: 10px 20px;
-  width: 100%;
+  width: 95%;
+  font-family: "Bungee", cursive;
+  color: #354259;
+}
+
+.tweetbutton {
+  font-family: "Bungee", cursive;
+  font-size: 14px;
+  height: auto;
+  color: color-white;
+  background-color: #6D8B74;
 }
 
 #targettweet {
@@ -50,43 +61,6 @@
   box-shadow: 5px 10px #888888;
 }
 
-.tweetcounter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 95%;
-  font-family: "Bungee", cursive;
-  color: #354259;
-}
-
-.tweetbutton {
-  font-family: "Bungee", cursive;
-  font-size: 14px;
-  height: auto;
-  color: color-white;
-  background-color: #6D8B74;
-}
-
-#addTweet {
-  margin-left: 5%;
-}
-
-#addTweet:hover {
-  color: #5F7161;
-}
-
-#tweet-text {
-  margin-top: 50px;
-  width: 90%;
-  font-size: 24px;
-  color: #354259;
-  background: transparent;
-  border: none;
-  border-bottom: 3px solid #354259;
-  outline: none;
-}
-
 .tweetfooter {
   display: flex;
   flex-direction: row;
@@ -102,6 +76,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  text-align: flex-start;
   align-items: flex-end;
   font-family: "Source Sans Pro", sans-serif;
   color: #354259;
@@ -112,6 +87,7 @@
 .tweetbody {
   display: flex;
   align-self: center;
+  text-align: start;
   font-size: 20px;
   color: #354259;
   background: transparent;
@@ -120,9 +96,34 @@
   outline: none;
   padding-inline: 1.5em;
   width: 95%;
-  /* position: relative; */
+}
+
+.new-tweet {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  height: auto;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+#tweetlist {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px 20px;
+  width: 100%;
+}
+
+#addTweet {
+  margin-left: 5%;
+}
+
+#addTweet:hover {
+  color: #b6ffbf;
 }
 
 .social:hover {
-  color: #5F7161;
+  color: #b6ffbf;
 }

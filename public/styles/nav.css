@@ -27,7 +27,7 @@
 }
 
 #showButton:hover {
-  color: #5F7161;
+  color: #b6ffbf;
   animation: blinker 1s step-start infinite;
 }
 
@@ -55,7 +55,7 @@
 
 .scrollToTop:hover {
   text-decoration: none;
-  color: #5F7161;
+  color: #b6ffbf;
   animation: blinker 1s step-start infinite;
 }
 

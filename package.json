@@ -15,9 +15,11 @@
     "body-parser": "^1.15.2",
     "chance": "^1.0.2",
     "express": "^4.13.4",
+    "sass": "1.53.0 compiled with dart2js 2.17.3",
     "md5": "^2.1.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"
+    
   }
 }
