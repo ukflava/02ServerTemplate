@@ -2,17 +2,32 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+## Disclaimer
+Current project done for learning purposes and not recommended for installation.
 
 ## Getting Started
 
-1. [Create](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) a new repository using this repository as a template.
-2. Clone your repository onto your local device.
-3. Install dependencies using the `npm install` command.
+1. Clone repository onto your local device.
+2. Install dependencies using the `npm install` command.
 3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
 4. Go to <http://localhost:8080/> in your browser.
 
-## Dependencies
+## Final Product
 
-- Express
-- Node 5.10.x or above
+!["Screenshot of Desktop version"](https://github.com/ukflava/02ServerTemplate/blob/master/public/images/Tweet-desktop.jpg)
+!["Screenshot of Mobile version"](https://github.com/ukflava/02ServerTemplate/blob/master/public/images/Tweet-mobile.jpg)
+!["Screenshot of landscape version for mobile"](https://github.com/ukflava/02ServerTemplate/blob/master/public/images/Tweet-landscape.jpg)
+!["Screenshot of basic version for old devices"](https://github.com/ukflava/02ServerTemplate/blob/master/public/images/Tweet-old-device.jpg)
+
+
+
+## Dependencies (current version)
+
+"body-parser": "^1.15.2",
+    "chance": "^1.0.2",
+    "express": "^4.13.4",
+    "sass": "1.53.0 compiled with dart2js 2.17.3",
+    "md5": "^2.1.0"
+
+## Known bugs
+*string without whitespaces can overlap border*
