@@ -10,27 +10,27 @@ $(document).ready(function() {
     $("#remaining").css({
       'color': color
     });
-   });
+  });
 
   $("#showButton").on('click',()=>{
     $("#targettweet").slideToggle();
-    $("#showButton").toggleClass('rotate')
-    console.log("banana")
-  })
+    $("#showButton").toggleClass('rotate');
+    console.log("banana");
+  });
 
-  $(window).scroll(function(){
+  $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
-        $('.scrollToTop').fadeIn();
+      $('.scrollToTop').fadeIn();
     } else {
-        $('.scrollToTop').fadeOut();
+      $('.scrollToTop').fadeOut();
     }
-});
+  });
 
 
-$('.scrollToTop').click(function(){
-  $("#targettweet").slideDown()
+  $('.scrollToTop').click(function() {
+    $("#targettweet").slideDown();
     $('html, body').animate({scrollTop : 0},800);
     return false;
-});
+  });
 
 });

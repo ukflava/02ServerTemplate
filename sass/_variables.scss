@@ -1,3 +1,14 @@
-$font-color-black: black;
-$background-color-main: #4056A1;
-$font-family-nav: 'Bungee', cursive;
+$font-color-danger: #f05432;
+
+$font-color-black: #354259;
+$font-color-hover: #5F7161;
+$color-white: #EFEAD8;
+$background-color-primary: #6D8B74;
+$background-color-wp: #D0C9C0;
+$font-family-nav: 'Bungee', cursive; 
+
+@mixin display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

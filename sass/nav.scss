@@ -14,11 +14,11 @@ content: "\f103"
   justify-content: center;
   align-items: center;
   font-family: 'Source Sans Pro', sans-serif;
-  color: #FFFFFF;
+  color: $color-white;
   
 }
 #rightbar{
-  color: #FFFFFF;
+  color: $color-white;
   background: transparent;
   font-size: 24px;
  }
@@ -26,46 +26,60 @@ content: "\f103"
 
 //*******************************Buttons**************************
 #showButton {
-  color: #FFFFFF;
+  color: $color-white;
     background-color: transparent;
     font-size: 24px;
     border: none;
     outline: none;
-    animation: next 1.2s infinite normal ease-out;
+ 
   }
   #showButton:hover {
-    color: #FF0000;
+    color: $font-color-hover;
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
    }
   .rotate {
     transform: rotate(180deg);
   }
   .scrollToTop{
     text-align:center; 
-    background-color: white;
+    color: $background-color-primary;
+    background-color: $color-white;
     border-radius: 50%;
     position:fixed;
     bottom:75px;
-    right:40px;
+    right: 5px;
     display:none;
     border: none;
     font-size: 30px;
+    
   }
   .scrollToTop:hover{
-    text-decoration:none;
-    color: #ff0000;
+       text-decoration:none;
+       color: $font-color-hover;
+    animation: blinker 1s step-start infinite;
+  }
+  
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
   }
 
 //***********************************TOP*********************************
 
 .topnav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  @include display-row();
   align-items: flex-start;
   align-content: flex-start;
   
   width: 100vw;
-  color: #FFFFFF;
+  color: $color-white;
   background: transparent;
   font-size: 24px;
   font-family: $font-family-nav;
@@ -84,7 +98,7 @@ header{
   justify-content: center;
   align-items: center;
   align-content: center;
-  background-color: #a57649;
+  background-color: $background-color-primary;
 }
 //***********************************BODY*********************************
 main{
@@ -94,7 +108,7 @@ main{
   justify-content: center;
   max-width: 70%; 
 height: auto; 
-background-color: #f4f1ec;
+background-color: background-color-wp;
 text-align: center;
 gap: 10px 20px;
 }
@@ -104,7 +118,7 @@ gap: 10px 20px;
 
 body {
   color: #545149;
-  background-color: #f4f1ec;
+  background-color: background-color-wp;
    font-size: 24px;
    height: auto;
    font-family: 'Source Sans Pro', sans-serif;
@@ -113,6 +127,14 @@ body {
 //***********************************RESPONSIVE*********************************
 
 // in mobile version topnav do not stay when scrolling
+@media only screen and (max-width: 400px) {
+  .topnav {
+  display: none
+  }
+  header{
+  display: none;
+  }
+}
 @media only screen and (max-width: 1024px) {
   main{
        left:5%;
@@ -133,7 +155,7 @@ body {
     align-items: flex-end;
     height: 120px;
     align-content: flex-end;
-    background-color: $background-color-main;
+    background-color: $background-color-primary;
     z-index: 100;
   }
   body {
